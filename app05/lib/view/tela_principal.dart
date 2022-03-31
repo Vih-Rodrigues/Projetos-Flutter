@@ -69,7 +69,30 @@ class _TelaPrincipalState extends State<TelaPrincipal> {
           itemCount: lista.length,
           itemBuilder: (context, index) {
             return ListTile(
-              title: Text(lista[index].nome),
+              
+              title: Text(
+                lista[index].nome, 
+                style: const TextStyle(fontSize: 28),
+              ),
+              
+              subtitle: Text(
+                'Capital: ${lista[index].capital} / Área: ${lista[index].area} km²'
+              ),
+
+              leading: const Icon(Icons.place_outlined),
+
+              trailing: const Icon(Icons.arrow_right),
+
+              // Evento associado ao item da lista
+              onTap: (){
+                //
+                // NAVEGAÇÃO
+                // Abrir a tela de detalhes passando como argumentos os dados do país selecionado pelo usuário
+                //
+                // lista[index] = "o que o usuário acabou de clicar"
+                Navigator.pushNamed(context, 'tela2', arguments: lista[index]);
+              },
+            
             );
           },
         ),

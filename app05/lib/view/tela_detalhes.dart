@@ -10,8 +10,22 @@ class TelaDetalhes extends StatefulWidget {
 class _TelaDetalhesState extends State<TelaDetalhes> {
   @override
   Widget build(BuildContext context) {
-    return Container(
-      
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('IBGE'),
+        backgroundColor: Colors.black87,
+      ),
+      backgroundColor: Colors.white24,
+      //
+      // Floating Action Button
+      //
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.favorite),
+        backgroundColor: Colors.black87,
+        onPressed: (){
+          Navigator.pop(context);
+        },
+      ),
     );
   }
 }
