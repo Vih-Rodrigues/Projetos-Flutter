@@ -49,6 +49,16 @@ class _TelaDetalhesState extends State<TelaDetalhes> {
         child: const Icon(Icons.favorite),
         backgroundColor: Colors.black87,
         onPressed: (){
+
+          ScaffoldMessenger.of(context).showSnackBar(
+            SnackBar(
+              content: Text(
+                'O ${p.nome.toUpperCase()} foi adicionado aos favoritos.',
+              ),
+              duration: const Duration(seconds: 3),
+            ),
+          );
+
           Navigator.pop(context);
         },
       ),
