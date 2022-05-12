@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "459941913422",
+    "project_id": "fatec-pdm-app06-loja-cafe",
+    "storage_bucket": "fatec-pdm-app06-loja-cafe.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:459941913422:android:e5985575e2f23d65e8741f",
+        "android_client_info": {
+          "package_name": "com.example.app06"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "459941913422-rv04n93qqcm9opcpndu5jmbpe4iu09um.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKoYcEE3pGglT2-cfisCLjvEjOoXtSpsQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "459941913422-rv04n93qqcm9opcpndu5jmbpe4iu09um.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

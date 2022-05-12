@@ -22,6 +22,16 @@ class _TelaDetalhesState extends State<TelaDetalhes> {
       appBar: AppBar(
         title: const Text('IBGE'),
         backgroundColor: Colors.black87,
+        
+        leading: IconButton(
+          tooltip: 'voltar',
+          icon: const Icon(
+            Icons.arrow_back_ios,
+          ),
+          onPressed: () {
+            Navigator.pop(context);
+          },
+        ),
       ),
 
       //
