@@ -1,6 +1,7 @@
 import 'dart:js';
 
 import 'package:app06/pages/criar_conta_page.dart';
+import 'package:app06/pages/inserir_page.dart';
 import 'package:app06/pages/login_page.dart';
 import 'package:app06/pages/principal_page.dart';
 import 'package:firebase_core/firebase_core.dart'; // importação para usar Firebase
@@ -24,6 +25,8 @@ Future<void> main() async {
         'login' : (context) => const LoginPage(),
         'criar_conta' : (context) => const CriarContaPage(),
         'principal' : (context) => const PrincipalPage(),
+
+        'inserir' : (context) => const InserirPage(),
       },
     )
   );
